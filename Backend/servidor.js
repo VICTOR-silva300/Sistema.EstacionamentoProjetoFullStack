@@ -15,13 +15,6 @@ app.get("/lerveiculos", (req, res) => {
   res.status(200).json(VEICULOS);
 });
 
-app.post("/adicionarveiculo", (req, res) => {
-  const novoVeiculo = req.body;
-  novoVeiculo.id = calcularProximoId();
-  VEICULOS.push(novoVeiculo);
-  res.status(201).json(novoVeiculo);
-});
-
 app.patch("/atualizarpagamento/:id", (req, res) => {
   const id = Number(req.params.id);
   const veiculo = VEICULOS.find(v => v.id === id);

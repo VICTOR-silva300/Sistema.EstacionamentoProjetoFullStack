@@ -33,7 +33,7 @@ app.patch("/atualizarpagamento/:id", (req, res) => {
   res.json(veiculo);
 });
 
-app.delete("/lerveiculos/:id", (req, res) => {
+app.delete("/deletarveiculo/:id", (req, res) => {
   const id = Number(req.params.id);
   const veiculoIndex = VEICULOS.findIndex(v => v.id === id);
   if (veiculoIndex === -1) return res.status(404).json({ erro: "Veículo não encontrado" });

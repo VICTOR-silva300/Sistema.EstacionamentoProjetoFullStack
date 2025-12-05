@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Estacionamento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    button {
+      margin: 3px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚗 Sistema de Estacionamento 🟢🟡🔴</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Placa</th>
+        <th>Modelo</th>
+        <th>Pago</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-veiculos">
+      <!-- Os veículos serão inseridos aqui via JavaScript -->
+    </tbody>
+  </table>
+
+  <br>
+  <button onclick="history.back()">⬅ Voltar</button>
+
+  <script src="./app.js"></script>
+</body>
+</html>

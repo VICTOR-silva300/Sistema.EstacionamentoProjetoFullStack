@@ -1,4 +1,4 @@
-console.log("App.js funcionando");
+console.log("App.js funcionando"); 
 
 const API = "http://localhost:3000/lerveiculos";
 const APIPagamento = "http://localhost:3000/atualizarpagamento";

@@ -8,7 +8,7 @@ async function carregar() {
     const res = await fetch(API);
     const dados = await res.json();
 
-    const tabela = document.getElementById("tabela-veiculos"); // CORRIGIDO!!!
+    const tabela = document.getElementById("tabela-veiculos"); 
     tabela.innerHTML = "";
 
     dados.forEach((carro) => {
